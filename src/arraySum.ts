@@ -14,8 +14,5 @@
  */
 export const arraySum = (numbers: number[]): number => {
   // 在此實現函式
-  return numbers.reduce(
-    (previousValue, currentValue) => previousValue + currentValue,
-    0,
-  );
-};
+  return numbers.reduce((previousValue, currentValue) => previousValue + currentValue, 0)
+}
