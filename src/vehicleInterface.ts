@@ -17,7 +17,8 @@ interface Vehicle {
   model: string;
   year: number;
 }
+
 export function vehicleInfo(vehicle: Vehicle): string {
   // 在此實現函式
-  return `${vehicle.brand} ${vehicle.model} (${vehicle.year})`;
+  return `${vehicle.brand} ${vehicle.model} (${vehicle.year})`
 }
