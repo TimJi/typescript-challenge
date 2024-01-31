@@ -4,7 +4,7 @@
  * @param b - 第二個數字
  */
 export function add(a: number, b: number): number {
-    // 在此實現函式
+  // 在此實現函式
 }
 
 /**
@@ -13,7 +13,7 @@ export function add(a: number, b: number): number {
  * @param b - 第二個數字
  */
 export function subtract(a: number, b: number): number {
-    // 在此實現函式
+  // 在此實現函式
 }
 
 /**
@@ -22,7 +22,7 @@ export function subtract(a: number, b: number): number {
  * @param b - 第二個數字
  */
 export function multiply(a: number, b: number): number {
-    // 在此實現函式
+  // 在此實現函式
 }
 
 /**
@@ -31,17 +31,17 @@ export function multiply(a: number, b: number): number {
  * @param b - 第二個數字
  */
 export function divide(a: number, b: number): number {
-    // 在此實現函式
+  // 在此實現函式
 }
 
 /**
  * 實現加法函數，結果不能超過 100。
- * 
+ *
  * @param a 第一個加數。
  * @param b 第二個加數。
  * @returns 兩個數字的和，但不超過 100。
  */
 export function add100(a: number, b: number): number {
-    const sum = a + b;
-    return sum > 100 ? 100 : sum;
-  }
+  const sum = a + b;
+  return sum > 100 ? 100 : sum;
+}
