@@ -10,8 +10,16 @@
  * @param value - 要過濾的屬性值
  * @returns - 回傳過濾後的陣列
  */
-export function filterByProperty() {
+export function filterByProperty(array: [], property: string, value: any): [] {
   // 請在此處寫下你的程式碼
+  let result: [] = []
+  for (let i = 0; i < array.length; i++) {
+    if (array[i][property] === value) {
+      result.push(array[i])
+    }
+  }
+  return result
+
 }
 
 // 寫法推薦
