@@ -18,5 +18,5 @@ interface User {
 
 export function getFullName(user: User): string {
   // 在此實現函式
-  return `${user.firstName} ${user.lastName}`;
+  return `${user.firstName} ${user.lastName}`
 }
