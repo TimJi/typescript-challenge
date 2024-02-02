@@ -8,11 +8,12 @@
 export function asyncSum(numbers: number[]): Promise<number> {
   return new Promise((resolve, reject) => {
     try {
-      // 請在此處寫下你的程式碼
+      // 請在此處寫下你的程式碼 use reduce
+      resolve(numbers.reduce((acc, cur) => acc + cur, 0))
     } catch (error) {
-      reject(error);
+      reject(error)
     }
-  });
+  })
 }
 
 // 備註：題目中即使累加操作本身是同步的，也可以使用 Promise 來模擬非同步的情況。這可以讓學生練習如何使用 Promise 來處理非同步操作
