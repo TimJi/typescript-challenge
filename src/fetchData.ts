@@ -5,4 +5,17 @@
  * @returns - 回傳一個 Promise，該 Promise resolve 的值應該是從 URL 取得的資料
  */
 
+interface TodosItem {
+  id: number
+  title: string
+  completed: boolean
+  userId: number
+}
+
 // 請在下方寫下你的程式碼
+const fetchData = async (url: string) => {
+  const response = await fetch(url)
+  return await response.json() as TodosItem
+}
+
+export { fetchData }
