@@ -5,5 +5,10 @@
  * @returns - 回傳包含所有唯一元素的新陣列
  */
 export function uniqueElements(array: number[]): number[] {
-  // 請在此處寫下你的程式碼
+  const set = new Set(array)
+  const map = new Map<number, null>()
+  set.forEach((value) => {
+    map.set(value, null)
+  })
+  return Array.from(map.keys())
 }
